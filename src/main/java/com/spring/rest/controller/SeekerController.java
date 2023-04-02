@@ -16,7 +16,7 @@ public class SeekerController {
     @RequestMapping("")
     public String home()
     {
-        return "Create an Seeker Web service";
+        return "Create an Blood Bank Information System Web service";
     }
 
     @RequestMapping(value = "/seeker/{seekId}", method = RequestMethod.GET)
@@ -47,5 +47,4 @@ public class SeekerController {
     void deleteSeeker(@PathVariable("seekId") int seekId) throws Exception {
         seekerService.deleteSeeker(seekId);
     }
-
 }
