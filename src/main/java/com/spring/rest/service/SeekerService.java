@@ -13,7 +13,7 @@ public class SeekerService {
 
     public void addSeeker(Seeker seek) throws Exception {
         if(seeker.containsKey(seek.getSeekId())) {
-            throw new Exception("This employee Id already exists");
+            throw new Exception("This Seeker Id already exists");
         }
         else {
             seeker.put(seek.getSeekId(), seek);
@@ -50,6 +50,5 @@ public class SeekerService {
             throw new Exception("Seeker Id not found");
         }
     }
-
 
 }

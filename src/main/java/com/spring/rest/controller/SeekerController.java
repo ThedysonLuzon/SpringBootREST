@@ -25,7 +25,7 @@ public class SeekerController {
     }
 
     @RequestMapping(value = "/seekers", method = RequestMethod.GET)
-    Iterable<Seeker> getEmployees() {
+    Iterable<Seeker> getSeekers() {
         return seekerService.getSeekers();
     }
 
